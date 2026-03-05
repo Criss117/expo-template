@@ -1,50 +1,72 @@
-# Welcome to your Expo app 👋
+# App Base - Expo React Native Blueprint
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Boilerplate configurado para aplicaciones Expo + React Native con las siguientes tecnologías:
 
-## Get started
+## Tecnologías
 
-1. Install dependencies
+| Tecnología | Propósito |
+|------------|-----------|
+| **React Native** | Framework principal para desarrollo móvil nativo |
+| **Expo** | Herramientas y plataforma para simplificar el desarrollo React Native |
+| **Uniwind** | Implementación de TailwindCSS para React Native |
+| **HeroUI Native** | Componentes UI modernos y accesibles |
+| **Bun** | Gestor de paquetes y runtime JavaScript |
 
-   ```bash
-   npm install
-   ```
+## Estructura del Proyecto
 
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+app-base/
+├── src/
+│   ├── app/              # File-based routing (Expo Router)
+│   │   ├── _layout.tsx   # Layout raíz
+│   │   └── index.tsx     # Pantalla principal
+│   ├── integrations/    # Configuraciones de librerías
+│   │   ├── hero-ui/      # Provider de HeroUI
+│   │   └── index.ts      # Exports de integraciones
+│   ├── assets/           # Imágenes y recursos estáticos
+│   └── global.css        # Estilos globales (Uniwind)
+├── app.json              # Configuración de Expo
+├── package.json          # Dependencias del proyecto
+├── tsconfig.json         # Configuración de TypeScript
+└── eslint.config.js      # Configuración de ESLint
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Getting Started
 
-## Learn more
+### Instalación de dependencias
 
-To learn more about developing your project with Expo, look at the following resources:
+```bash
+bun install
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### Ejecutar en desarrollo
 
-## Join the community
+```bash
+# Iniciar servidor Metro
+bun start
 
-Join our community of developers creating universal apps.
+# Ejecutar en Android
+bun android
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+# Ejecutar en iOS
+bun ios
+
+# Ejecutar en Web
+bun web
+```
+
+### Comandos disponibles
+
+- `bun start` - Inicia el servidor de desarrollo
+- `bun android` - Ejecuta la app en Android
+- `bun ios` - Ejecuta la app en iOS
+- `bun web` - Ejecuta la app en web
+- `bun lint` - Ejecuta ESLint
+
+## Características Configuradas
+
+- **File-based Routing**: Expo Router para navegación basada en archivos
+- **Styling**: Uniwind (TailwindCSS) configurado y listo para usar
+- **UI Components**: HeroUI Native integrado con su provider
+- **TypeScript**: Configuración completa de tipos
+- **ESLint**: Linting configurado con eslint-config-expo
