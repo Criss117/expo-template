@@ -1,16 +1,18 @@
 # App Base - Expo React Native Blueprint
 
+> **Nota**: Este proyecto es únicamente un punto de inicio para proyectos React Native/Expo.
+
 Boilerplate configurado para aplicaciones Expo + React Native con las siguientes tecnologías:
 
 ## Tecnologías
 
-| Tecnología | Propósito |
-|------------|-----------|
-| **React Native** | Framework principal para desarrollo móvil nativo |
-| **Expo** | Herramientas y plataforma para simplificar el desarrollo React Native |
-| **Uniwind** | Implementación de TailwindCSS para React Native |
-| **HeroUI Native** | Componentes UI modernos y accesibles |
-| **Bun** | Gestor de paquetes y runtime JavaScript |
+| Tecnología        | Propósito                                                             |
+| ----------------- | --------------------------------------------------------------------- |
+| **React Native**  | Framework principal para desarrollo móvil nativo                      |
+| **Expo**          | Herramientas y plataforma para simplificar el desarrollo React Native |
+| **Uniwind**       | Implementación de TailwindCSS para React Native                       |
+| **HeroUI Native** | Componentes UI modernos y accesibles                                  |
+| **Bun**           | Gestor de paquetes y runtime JavaScript                               |
 
 ## Estructura del Proyecto
 
@@ -20,11 +22,12 @@ app-base/
 │   ├── app/              # File-based routing (Expo Router)
 │   │   ├── _layout.tsx   # Layout raíz
 │   │   └── index.tsx     # Pantalla principal
-│   ├── integrations/    # Configuraciones de librerías
+│   ├── integrations/     # Configuraciones de librerías
 │   │   ├── hero-ui/      # Provider de HeroUI
+|   |   ├── fonts/        # Fuentes
 │   │   └── index.ts      # Exports de integraciones
-│   ├── assets/           # Imágenes y recursos estáticos
 │   └── global.css        # Estilos globales (Uniwind)
+├── assets/               # Imágenes y recursos estáticos
 ├── app.json              # Configuración de Expo
 ├── package.json          # Dependencias del proyecto
 ├── tsconfig.json         # Configuración de TypeScript
@@ -70,3 +73,4 @@ bun web
 - **UI Components**: HeroUI Native integrado con su provider
 - **TypeScript**: Configuración completa de tipos
 - **ESLint**: Linting configurado con eslint-config-expo
+- **Fuentes**: Fuente Geist configurada (requiere `bun prebuild` o `bun android`/`bun ios` para generar la build nativa)

@@ -1,3 +1,4 @@
+import { FontsProvider } from "./fonts";
 import { HeroUIProvider } from "./hero-ui";
 
 interface Props {
@@ -5,5 +6,9 @@ interface Props {
 }
 
 export function Integrations({ children }: Props) {
-  return <HeroUIProvider>{children}</HeroUIProvider>;
+  return (
+    <FontsProvider>
+      <HeroUIProvider>{children}</HeroUIProvider>
+    </FontsProvider>
+  );
 }
