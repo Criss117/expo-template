@@ -4,13 +4,17 @@
   "version": "1.0.0",
   "scripts": {
     "start": "expo start",
-    "reset-project": "node ./scripts/reset-project.js",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "lint": "expo lint"
+    "lint": "expo lint",
+    "eas-build:dev": "TMPDIR=~/eas-temp eas build --platform android --profile development",
+    "eas-build:prev": "TMPDIR=~/eas-temp eas build --platform android --profile preview",
+    "eas-build:dev:local": "eas-build:dev --local",
+    "eas-build:prev:local": "eas-build:prev --local"
   },
   "dependencies": {
+    "@expo-google-fonts/geist": "0.4.2",
     "@expo/vector-icons": "15.1.1",
     "@gorhom/bottom-sheet": "5.2.9",
     "@react-navigation/bottom-tabs": "^7.15.5",

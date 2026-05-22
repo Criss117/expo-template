@@ -21,7 +21,19 @@
   /* Opacity */
   --opacity-disabled: 0.5;
   /* Font Family */
-  --font-sans: var(--font-inter);
+
+  /* fonts */
+  --font-thin: geist-thin;
+  --font-extralight: geist-extralight;
+  --font-light: geist-light;
+  --font-regular: geist-regular;
+  --font-medium: geist-medium;
+  --font-semibold: geist-semibold;
+  --font-bold: geist-bold;
+  --font-extrabold: geist-extrabold;
+  --font-black: geist-black;
+
+  --font-sans: geist-extralight;
 }
 
 @layer theme {
