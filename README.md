@@ -4,17 +4,17 @@ Template de inicio rápido para aplicaciones React Native con Expo SDK 57. Pensa
 
 ## Stack
 
-| Capa | Tecnología |
-|------|-----------|
-| Runtime | [Expo SDK 57](https://docs.expo.dev/versions/v57.0.0/) · React Native 0.86 |
-| Lenguaje | TypeScript 6.0 (strict) |
-| Navegación | [expo-router](https://docs.expo.dev/router/introduction/) (file-based) |
-| Estilos | [Tailwind CSS v4](https://tailwindcss.com/) vía [Uniwind](https://uniwind.dev) |
-| Componentes | [HeroUI Native](https://heroui-native.com) |
-| Animaciones | react-native-reanimated 4.5 |
-| Gestos | react-native-gesture-handler · bottom-sheet |
-| Fuente | Geist (Google Fonts) |
-| Package manager | Bun |
+| Capa            | Tecnología                                                                     |
+| --------------- | ------------------------------------------------------------------------------ |
+| Runtime         | [Expo SDK 57](https://docs.expo.dev/versions/v57.0.0/) · React Native 0.86     |
+| Lenguaje        | TypeScript 6.0 (strict)                                                        |
+| Navegación      | [expo-router](https://docs.expo.dev/router/introduction/) (file-based)         |
+| Estilos         | [Tailwind CSS v4](https://tailwindcss.com/) vía [Uniwind](https://uniwind.dev) |
+| Componentes     | [HeroUI Native](https://heroui-native.com)                                     |
+| Animaciones     | react-native-reanimated 4.5                                                    |
+| Gestos          | react-native-gesture-handler · bottom-sheet                                    |
+| Fuente          | Geist (Google Fonts)                                                           |
+| Package manager | Bun                                                                            |
 
 ## Estructura del proyecto
 
@@ -79,8 +79,8 @@ bun lint
 ## Path aliases
 
 ```typescript
-import { Button } from "@/components/Button";  // src/components/Button
-import logo from "@/assets/icon.png";           // assets/icon.png
+import { Button } from "@/components/Button"; // src/components/Button
+import logo from "@/assets/icon.png"; // assets/icon.png
 ```
 
 ## Licencia
