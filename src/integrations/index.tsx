@@ -6,7 +6,7 @@ export function Integrations({ children }: { children: React.ReactNode }) {
   return (
     <GestureHandlerRootView>
       <FontsProvider>
-        <HeroUIProvider>{children}</HeroUIProvider>;
+        <HeroUIProvider>{children}</HeroUIProvider>
       </FontsProvider>
     </GestureHandlerRootView>
   );
